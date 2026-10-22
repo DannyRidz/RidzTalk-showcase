@@ -1,0 +1,1 @@
+run_id,utterance_id,condition,source_language,target_language,device,os,network,audio_route,source_reference,source_hypothesis,translation_reference,translation_hypothesis,speech_end_ms,first_audio_ms,terminal_ms,outcome,meaning_score,reviewer_id,api_cost_usd,billed_session_seconds,notes
