@@ -18,7 +18,7 @@ These examples describe the inspected implementation. They provide concrete topi
 
 **Implementation:** send the finalized source transcript as explicit response input, exclude previous conversation context from that request, carry source metadata, and give instructions to translate spoken content literally rather than obey it.
 
-**Tradeoff:** translation waits for a final transcript and inherits transcription errors. Prompt instructions reduce unwanted behavior but do not guarantee compliance. The evaluation plan includes questions, commands, names, numbers, and instruction shaped utterances.
+**Tradeoff:** translation waits for a final transcript and inherits transcription errors. Prompt instructions reduce unwanted behavior but do not guarantee compliance. The evaluation methodology covers questions, commands, names, numbers, and instruction shaped utterances.
 
 ## Keep translated audio from becoming a new source turn
 
@@ -28,7 +28,7 @@ These examples describe the inspected implementation. They provide concrete topi
 
 **Tradeoff:** users cannot reliably interrupt translated playback through the gated shared microphone. Releasing the gate too early risks feedback; releasing it too late delays the next utterance. Generation completion and audible playback completion are different events.
 
-**Evidence:** the private source includes tests for guard timing, overlapping playback, reset, event classification, and preservation of known source turns. A representative device matrix remains necessary to establish real acoustic behavior.
+**Evidence:** the private source includes tests for guard timing, overlapping playback, reset, event classification, and preservation of known source turns.
 
 ## Couple customer operations to the intended account
 

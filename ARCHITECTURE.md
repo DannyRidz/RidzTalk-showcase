@@ -43,7 +43,7 @@ The queue serializes translation requests and preserves committed speech order e
 
 WebRTC capture requests echo cancellation, noise suppression, and gain control. Platform integrations configure communication audio modes while the microphone is active. A guard disables outgoing microphone tracks during translated playback and holds them briefly after playback ends.
 
-This reduces the opportunity for the app to translate its own speaker output. It also means the conversation is intentionally turn based while translated audio plays. Hardware and room acoustics still need physical device verification.
+This reduces the opportunity for the app to translate its own speaker output. It also means the conversation is intentionally turn based while translated audio plays.
 
 ## Accounts, subscriptions, and usage
 

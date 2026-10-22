@@ -1,8 +1,8 @@
-# Speech translation evaluation
+# Speech translation evaluation methodology
 
-**Status: protocol prepared; no experiment results collected.** This folder is a reproducible recording plan, not a completed evaluation or an automatic scoring system.
+This methodology defines a reproducible approach to assessing transcription, translation meaning, audio latency, reliability, and API cost.
 
-## First experiment
+## Corpus design
 
 Start with one language pair that a competent bilingual reviewer can assess. Record 60 utterances, balanced equally between directions. Use 10 utterances in each category: everyday phrases, questions, commands, names and numbers, mixed language speech, and instruction shaped content that should be translated rather than followed.
 
@@ -41,16 +41,8 @@ Use a second bilingual reviewer for at least 20% of outputs where available. Ran
 
 After the recorded corpus, perform a live 10 turn exchange on each available physical device and audio route. Test phone speaker, headset, microphone denial, temporary network loss, foreground restore, and repeated stop/start. Record results separately from the recorded corpus. Browser event injection cannot establish acoustic or native routing behavior.
 
-## Report template
+## Reporting format
 
-| Measure | Baseline | Candidate |
-| --- | --- | --- |
-| Configuration and date | Not run | Not run |
-| Attempted / successful turns | Not measured | Not measured |
-| Median / p95 audio latency | Not measured | Not measured |
-| Word or character error rate | Not measured | Not measured |
-| Meaning score distribution / reviewer coverage | Not measured | Not measured |
-| Failure rate by category | Not measured | Not measured |
-| API cost per session minute | Not measured | Not measured |
+A comparison report identifies each configuration and date, attempted and successful turns, median and p95 audio latency, word or character error rate, meaning score distribution, reviewer coverage, failure categories, and API cost per session minute.
 
-Include the corpus definition, raw rows that are safe to share, environment, scoring procedure, three representative failures, any configuration changes, and limitations. Report paired comparisons on identical utterances. Do not describe a small initial corpus as a general language benchmark.
+Include the corpus definition, raw rows that are safe to share, environment, scoring procedure, representative failures, configuration differences, and limitations. Use paired comparisons on identical utterances. Describe the corpus scope precisely.
